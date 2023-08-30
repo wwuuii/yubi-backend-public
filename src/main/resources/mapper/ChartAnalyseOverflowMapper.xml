@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuxian.yubi.mapper.ChartAnalyseOverflowMapper">
+
+    <resultMap id="BaseResultMap" type="com.yuxian.yubi.model.entity.ChartAnalyseOverflow">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="chartId" column="chartId" jdbcType="BIGINT"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+            <result property="question" column="question" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,question,chartId,createTime,
+        updateTime,isDelete,name
+    </sql>
+</mapper>
